@@ -1,0 +1,20 @@
+<!-- templates/adresses.html -->
+
+{% extends "base.html" %}
+
+{% block content %}
+<div class="column is-4 is-offset-4">
+    <h3 class="title">New address</h3>
+    <div class="box">
+        <form method="POST" action="/adresses">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="address" placeholder="Your address" autofocus="">
+                </div>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">Search</button>
+        </form>
+     </div>
+</div>
+
+{% endblock %}

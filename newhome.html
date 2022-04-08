@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_01f6c4e4b6cf4d908f71f607f2ea7065 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_01f6c4e4b6cf4d908f71f607f2ea7065" ></div>
+        
+</body>
+<script>    
+    
+            var map_01f6c4e4b6cf4d908f71f607f2ea7065 = L.map(
+                "map_01f6c4e4b6cf4d908f71f607f2ea7065",
+                {
+                    center: [48.6274241, 2.0526556],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b87485493b5e474b82ec71f99499cf32 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_01f6c4e4b6cf4d908f71f607f2ea7065);
+        
+    
+            var circle_2d805a929de145b8bb999c25828e35da = L.circle(
+                [48.6274241, 2.0526556],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_01f6c4e4b6cf4d908f71f607f2ea7065);
+        
+    
+        var popup_99515494ef81413b8b5c9d51c36aa906 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2052b1b122f641f8b31abd96acafd77a = $(`<div id="html_2052b1b122f641f8b31abd96acafd77a" style="width: 100.0%; height: 100.0%;">The Waterfront</div>`)[0];
+            popup_99515494ef81413b8b5c9d51c36aa906.setContent(html_2052b1b122f641f8b31abd96acafd77a);
+        
+
+        circle_2d805a929de145b8bb999c25828e35da.bindPopup(popup_99515494ef81413b8b5c9d51c36aa906)
+        ;
+
+        
+    
+    
+            var marker_7762d76207fb4864a0964b089e6f934f = L.marker(
+                [48.6274241, 2.0526556],
+                {}
+            ).addTo(map_01f6c4e4b6cf4d908f71f607f2ea7065);
+        
+    
+            var icon_91d3c99821e5440e9912c10964cf8c18 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7762d76207fb4864a0964b089e6f934f.setIcon(icon_91d3c99821e5440e9912c10964cf8c18);
+        
+    
+        var popup_f93782f1b23d439586eb042c877c5655 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30080c3c2d554fa0906e2729724562b3 = $(`<div id="html_30080c3c2d554fa0906e2729724562b3" style="width: 100.0%; height: 100.0%;">14, Rue des Sablons, Forges-les-Bains, Palaiseau, Essonne, Île-de-France, France métropolitaine, 91470, France</div>`)[0];
+            popup_f93782f1b23d439586eb042c877c5655.setContent(html_30080c3c2d554fa0906e2729724562b3);
+        
+
+        marker_7762d76207fb4864a0964b089e6f934f.bindPopup(popup_f93782f1b23d439586eb042c877c5655)
+        ;
+
+        
+    
+</script>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b907963ddc67439989dd2be72416e3a3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b907963ddc67439989dd2be72416e3a3" ></div>
+        
+</body>
+<script>    
+    
+            var map_b907963ddc67439989dd2be72416e3a3 = L.map(
+                "map_b907963ddc67439989dd2be72416e3a3",
+                {
+                    center: [46.7654682, 0.5102418],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dfbe43cf8a1c4be1b8219643ea0cbcf0 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b907963ddc67439989dd2be72416e3a3);
+        
+    
+            var circle_1d7f7a9774064fb5be85c4d0e37be860 = L.circle(
+                [46.7654682, 0.5102418],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_b907963ddc67439989dd2be72416e3a3);
+        
+    
+        var popup_ea4757b912d2471ca697111ff9405e6a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f7efa6c2ca3440349f64980e93b85afb = $(`<div id="html_f7efa6c2ca3440349f64980e93b85afb" style="width: 100.0%; height: 100.0%;">The Waterfront</div>`)[0];
+            popup_ea4757b912d2471ca697111ff9405e6a.setContent(html_f7efa6c2ca3440349f64980e93b85afb);
+        
+
+        circle_1d7f7a9774064fb5be85c4d0e37be860.bindPopup(popup_ea4757b912d2471ca697111ff9405e6a)
+        ;
+
+        
+    
+    
+            var marker_71a8359e2fb34d019f6d9872d45166a0 = L.marker(
+                [46.7654682, 0.5102418],
+                {}
+            ).addTo(map_b907963ddc67439989dd2be72416e3a3);
+        
+    
+            var icon_527b885e9cec4a438bc1fcbc17b07a02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71a8359e2fb34d019f6d9872d45166a0.setIcon(icon_527b885e9cec4a438bc1fcbc17b07a02);
+        
+    
+        var popup_0e2c94580f034d3cb561d8dc5e9b1c88 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae6c3a940a7d478093a70011880a80d5 = $(`<div id="html_ae6c3a940a7d478093a70011880a80d5" style="width: 100.0%; height: 100.0%;">Rue Honoré de Balzac, Naintré, Châtellerault, Vienne, Nouvelle-Aquitaine, France métropolitaine, 86530, France</div>`)[0];
+            popup_0e2c94580f034d3cb561d8dc5e9b1c88.setContent(html_ae6c3a940a7d478093a70011880a80d5);
+        
+
+        marker_71a8359e2fb34d019f6d9872d45166a0.bindPopup(popup_0e2c94580f034d3cb561d8dc5e9b1c88)
+        ;
+
+        
+    
+</script>

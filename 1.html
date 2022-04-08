@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3ba3a87cd11446338ed987e7df86e1da {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_3ba3a87cd11446338ed987e7df86e1da" ></div>
+        
+</body>
+<script>    
+    
+            var map_3ba3a87cd11446338ed987e7df86e1da = L.map(
+                "map_3ba3a87cd11446338ed987e7df86e1da",
+                {
+                    center: [50.3402055, 3.5505108],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_525fe12415354207931bae1e28a496ab = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_3ba3a87cd11446338ed987e7df86e1da);
+        
+    
+            var circle_9e2b75ecb3a74dd79e973cf98bdfd74b = L.circle(
+                [50.3402055, 3.5505108],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "crimson", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20000, "stroke": true, "weight": 3}
+            ).addTo(map_3ba3a87cd11446338ed987e7df86e1da);
+        
+    
+        var popup_86c6c1521c594493b93a77f3232ddfb9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_17e3f94d743c4130af7b26e97c47c8e1 = $(`<div id="html_17e3f94d743c4130af7b26e97c47c8e1" style="width: 100.0%; height: 100.0%;">The Waterfront</div>`)[0];
+            popup_86c6c1521c594493b93a77f3232ddfb9.setContent(html_17e3f94d743c4130af7b26e97c47c8e1);
+        
+
+        circle_9e2b75ecb3a74dd79e973cf98bdfd74b.bindPopup(popup_86c6c1521c594493b93a77f3232ddfb9)
+        ;
+
+        
+    
+    
+            var marker_e10f5edca27e434eab97d2edb99c10dd = L.marker(
+                [50.3402055, 3.5505108],
+                {}
+            ).addTo(map_3ba3a87cd11446338ed987e7df86e1da);
+        
+    
+            var icon_b0015bb8d40d429a815368d1a85ec701 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e10f5edca27e434eab97d2edb99c10dd.setIcon(icon_b0015bb8d40d429a815368d1a85ec701);
+        
+    
+        var popup_1b39f5b1183d469f8095f1221248c34b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9610b112668f42008891f27c645f09dd = $(`<div id="html_9610b112668f42008891f27c645f09dd" style="width: 100.0%; height: 100.0%;">Route de Préseau, Marly, Valenciennes, Nord, Hauts-de-France, France métropolitaine, 59770, France</div>`)[0];
+            popup_1b39f5b1183d469f8095f1221248c34b.setContent(html_9610b112668f42008891f27c645f09dd);
+        
+
+        marker_e10f5edca27e434eab97d2edb99c10dd.bindPopup(popup_1b39f5b1183d469f8095f1221248c34b)
+        ;
+
+        
+    
+</script>
